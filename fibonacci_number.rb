@@ -20,16 +20,12 @@ def fib(n)
 end
 
 #Loop solution #1
-#fib(80000) => 0.232s
+#fib(80000) => 0.224s
 def fib(n)
   return n if n < 2
-  pred_n, next_n = 0, 1
-    (n-1).times do
-      sum = pred_n + next_n
-        pred_n = next_n
-      next_n = sum
-    end
-  next_n
+  f0, f1 = 0, 1
+    (n-1).times { f0, f1 = f1, f0+f1 }
+  f1
 end
 
 #Loop solution #2
