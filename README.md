@@ -10,5 +10,5 @@ My Ruby versions of known algos.
 - [x] Euclidean Algo (greatest common divisor)
 - [x] Bogo Sort
 - [ ] Quick Sort
-- [ ] Subset Sum Problem
+- [x] Subset Sum Problem
 - [x] Fibonacci Number
