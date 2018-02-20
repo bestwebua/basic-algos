@@ -3,14 +3,14 @@ Fibonacci Number algo.
 =end
 
 #Slow recursive solution
-#lib(80000) => error, stack level too deep
+#fib(80000) => error, stack level too deep
 def  fib(n)
   return n if n < 2
   fib(n-1) + fib(n-2)
 end
 
 #Fast recursive solution with caching
-#lib(80000) => error, stack level too deep
+#fib(80000) => error, stack level too deep
 $cache = {}
 def fib(n)
   if $cache[n].nil?
@@ -20,7 +20,7 @@ def fib(n)
 end
 
 #Loop solution #1
-#lib(80000) => 0.232s
+#fib(80000) => 0.232s
 def fib(n)
   return n if n < 2
   pred_n, next_n = 0, 1
@@ -33,7 +33,7 @@ def fib(n)
 end
 
 #Loop solution #2
-#lib(80000) => 0.260s
+#fib(80000) => 0.260s
 def fib(n)
   return n if n < 2
   arr = [0, 1]
