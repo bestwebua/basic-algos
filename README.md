@@ -11,3 +11,4 @@ My Ruby versions of known algos.
 - [x] Bogo Sort
 - [ ] Quick Sort
 - [ ] Subset Sum Problem
+- [x] Fibonacci Number
